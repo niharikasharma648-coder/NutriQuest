@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#f9f9ff;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-variant": "#d8e3fb", "primary": "#006c49", "on-primary-container": "#00422b", "on-background": "#111c2d", "on-primary": "#ffffff", "on-surface": "#111c2d", "tertiary-fixed": "#e9ddff", "on-error-container": "#93000a", "on-surface-variant": "#3c4a42", "background": "#f9f9ff", "on-tertiary-fixed-variant": "#5516be", "on-primary-fixed": "#002113", "inverse-surface": "#263143", "on-secondary-fixed-variant": "#653e00", "surface": "#f9f9ff", "secondary-fixed": "#ffddb8", "on-tertiary-container": "#4600a7", "inverse-on-surface": "#ecf1ff", "on-tertiary": "#ffffff", "outline": "#6c7a71", "outline-variant": "#bbcabf", "on-error": "#ffffff", "tertiary-fixed-dim": "#d0bcff", "surface-container-lowest": "#ffffff", "surface-tint": "#006c49", "surface-dim": "#cfdaf2", "on-tertiary-fixed": "#23005c", "error": "#ba1a1a", "surface-bright": "#f9f9ff", "inverse-primary": "#4edea3", "error-container": "#ffdad6", "primary-fixed-dim": "#4edea3", "secondary-fixed-dim": "#ffb95f", "tertiary-container": "#b090ff", "surface-container-low": "#f0f3ff", "tertiary": "#6d3bd7", "surface-container": "#e7eeff", "on-primary-fixed-variant": "#005236", "surface-container-highest": "#d8e3fb", "on-secondary-container": "#684000", "primary-fixed": "#6ffbbe", "on-secondary-fixed": "#2a1700", "surface-container-high": "#dee8ff", "primary-container": "#10b981", "secondary": "#855300", "secondary-container": "#fea619", "on-secondary": "#ffffff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-xl": "2.25rem", "margin-desktop": "2.5rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "margin": "1.25rem", "gutter": "1.25rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem", "gutter-desktop": "1.5rem", "space-md": "1rem" }, "fontFamily": { "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "body-md": ["15px", {"lineHeight": "22px", "fontWeight": "450"}], "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "450"}], "body-lg": ["17px", {"lineHeight": "26px", "fontWeight": "500"}], "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "700"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "700"}], "display-lg": ["44px", {"lineHeight": "52px", "letterSpacing": "-0.03em", "fontWeight": "800"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700"}], "display-lg-mobile": ["34px", {"lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "800"}], "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800"}], "headline-sm": ["18px", {"lineHeight": "24px", "fontWeight": "700"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "800"}], "headline-xl-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "750"}], "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,108,73,0.06)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Go Back" class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-container-low text-on-surface active:scale-95 transition-transform shadow-[0_2px_0_0_#d8e3fb]" onclick="history.back()"><span class="material-symbols-outlined text-[20px]">arrow_back</span></button><img alt="NutriQuest Brand Logo" class="h-7 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtv8-0uZn_4aOpj84seTweDEjjPEODrbxyD_C7ZqTwL1Pq_hjUiUCqg454_OfZK2eYP7UANCpfHlN3sJphWeuZgGR3mWgfUwxzozO6TpIY96nNvOOAei4sCHjI1Ek-GUrhiBRseHqYk7meRvzEwjhubT7Mz3AtrqKL9pyOcUUqo22tlrdmvyT0RjE2xrJZYyx-lnhHVIeXqNSegcKNSterKNE3-gvh124SeRzy9Ytd2jtxFd30si6y"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-surface truncate leading-tight">Game Arena</span><span class="font-label-sm text-label-sm text-primary font-extrabold">NutriQuest</span></div></div><div class="flex items-center gap-space-xs shrink-0"><div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px] text-primary">bolt</span><span class="font-extrabold">+420</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20 ml-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg5rAbDpK4wxKlyipurQ69zCAooLli5Lax05F0lOQFcin6o9qxFkFmBNh4tOzusShvKTjeSw2RGDGAlVLG4M36va_NiyS0OLVHM5VpAfoKOOVXfmDy_xbdgvxHKfNh2XJMnvD3UAlE_CAIqV8N4VC8C0RZv3MoaPtsFdl8XVYFjtM4KGLbYwA2XFiNQ4UCNaSQcNskq-n19nfqbbO1oRPEbhKRuHskZUlS4juyD2Ug2ppY40Ywdo19"/></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full px-margin-mobile pb-8 gap-space-md select-none">
+<!-- Game Header Info Card -->
+<div class="flex flex-col w-full bg-surface-container-lowest rounded-lg p-space-md shadow-[0_4px_0_0_#d8e3fb,0_10px_20px_rgba(0,108,73,0.04)]">
+<div class="flex items-center justify-between gap-space-sm mb-space-xs">
+<div class="flex items-center gap-1.5 bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full shadow-[0_2px_0_0_#ffb95f]">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">timer</span>
+<span class="font-label-lg text-label-lg font-black tracking-wider" id="game-timer">01:45</span>
+</div>
+<div class="flex items-center gap-1 px-3 py-1 bg-surface-container text-primary rounded-full">
+<span class="material-symbols-outlined text-[16px]">track_changes</span>
+<span class="font-label-md text-label-md">Healthy Balanced Lunch</span>
+</div>
+<div class="flex items-center gap-1.5 bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full shadow-[0_2px_0_0_#4edea3]">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="font-label-lg text-label-lg font-extrabold" id="score-badge">82/100</span>
+</div>
+</div>
+<!-- Instructions Collapsible Banner -->
+<div class="flex items-start gap-space-sm bg-surface-container-low rounded-DEFAULT p-3 mt-1">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-[0_2px_0_0_#006c49]">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary uppercase font-extrabold tracking-wider">Plate Quest Rule</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug mt-0.5">
+          Fill <span class="font-bold text-primary">1/2</span> with veggies &amp; fruits, <span class="font-bold text-secondary">1/4</span> with whole grains, and <span class="font-bold text-error">1/4</span> with lean protein.
+        </p>
+</div>
+</div>
+</div>
+<!-- Interactive Plate Visual Stage -->
+<div class="flex flex-col items-center justify-center w-full bg-surface-container-lowest rounded-xl p-space-md shadow-[0_6px_0_0_#d8e3fb,0_16px_28px_rgba(0,108,73,0.06)] relative overflow-hidden">
+<!-- Ambient organic glow background -->
+<div class="absolute -top-16 -right-16 w-44 h-44 rounded-full bg-primary-fixed-dim/20 blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-16 -left-16 w-44 h-44 rounded-full bg-secondary-fixed/30 blur-2xl pointer-events-none"></div>
+<!-- Plate Target Label & Live Sync -->
+<div class="w-full flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-surface font-extrabold uppercase tracking-wide">Plate Assembler</span>
+</div>
+<button class="flex items-center gap-1 text-outline hover:text-error transition-colors px-2 py-0.5 rounded-full bg-surface-container-low active:scale-95" id="quick-clear-btn">
+<span class="material-symbols-outlined text-[15px]">restart_alt</span>
+<span class="font-label-sm text-label-sm">Reset</span>
+</button>
+</div>
+<!-- The 3D Tactile Ceramic Plate Container -->
+<div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-full bg-surface-container-highest p-3 shadow-[inset_0_4px_10px_rgba(0,0,0,0.08),0_12px_24px_rgba(0,66,43,0.12)] flex items-center justify-center">
+<!-- Plate Rim Inner Lip -->
+<div class="relative w-full h-full rounded-full bg-surface-container-lowest shadow-[inset_0_2px_4px_rgba(0,0,0,0.04)] flex items-center justify-center p-2.5 overflow-hidden">
+<!-- Divided Food Wedges Visual Structure -->
+<div class="relative w-full h-full rounded-full overflow-hidden flex flex-row">
+<!-- 50% LEFT WEDGE: Veggies & Fruits -->
+<div class="w-1/2 h-full bg-primary-fixed/25 p-2 flex flex-col justify-between items-center transition-all duration-300 relative group" id="wedge-veggies">
+<div class="flex items-center gap-1 bg-surface-container-lowest/90 px-2 py-0.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[12px] text-primary" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">50% Greens</span>
+</div>
+<!-- Items on this section -->
+<div class="flex flex-wrap items-center justify-center gap-1.5 my-auto max-w-[110px]" id="plate-items-veggie">
+<div class="flex items-center gap-1 bg-surface-container-lowest px-2 py-1 rounded-full shadow-[0_2px_0_0_#bbcabf] animate-bounce text-[13px]">
+<span>🥦</span>
+<span class="font-label-sm text-label-sm text-on-surface">Broccoli</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest px-2 py-1 rounded-full shadow-[0_2px_0_0_#bbcabf] text-[13px]">
+<span>🥗</span>
+<span class="font-label-sm text-label-sm text-on-surface">Spinach</span>
+</div>
+</div>
+<span class="text-primary/60 font-label-sm text-label-sm font-semibold">Veg &amp; Fruits</span>
+</div>
+<!-- Divider Gap Line Vertical -->
+<div class="w-1 h-full bg-surface-container"></div>
+<!-- 50% RIGHT SIDE: Split into Top (Grains) & Bottom (Protein) -->
+<div class="w-1/2 h-full flex flex-col">
+<!-- 25% TOP RIGHT WEDGE: Whole Grains -->
+<div class="w-full h-1/2 bg-secondary-fixed/30 p-2 flex flex-col justify-between items-center transition-all duration-300" id="wedge-grains">
+<div class="flex items-center gap-1 bg-surface-container-lowest/90 px-2 py-0.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[12px] text-secondary" style="font-variation-settings: 'FILL' 1;">grain</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">25% Grains</span>
+</div>
+<!-- Grains Items -->
+<div class="flex flex-wrap items-center justify-center gap-1 my-auto" id="plate-items-grain">
+<div class="flex items-center gap-1 bg-surface-container-lowest px-2 py-1 rounded-full shadow-[0_2px_0_0_#ffddb8] text-[13px]">
+<span>🌾</span>
+<span class="font-label-sm text-label-sm text-on-surface">Quinoa</span>
+</div>
+</div>
+<span class="text-secondary/70 font-label-sm text-label-sm font-semibold">Whole Grains</span>
+</div>
+<!-- Divider Gap Line Horizontal -->
+<div class="w-full h-1 bg-surface-container"></div>
+<!-- 25% BOTTOM RIGHT WEDGE: Lean Protein -->
+<div class="w-full h-1/2 bg-error-container/40 p-2 flex flex-col justify-between items-center transition-all duration-300" id="wedge-protein">
+<div class="flex items-center gap-1 bg-surface-container-lowest/90 px-2 py-0.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[12px] text-error" style="font-variation-settings: 'FILL' 1;">egg_alt</span>
+<span class="font-label-sm text-label-sm text-error font-bold">25% Protein</span>
+</div>
+<!-- Protein Items -->
+<div class="flex flex-wrap items-center justify-center gap-1 my-auto" id="plate-items-protein">
+<div class="flex items-center gap-1 bg-surface-container-lowest px-2 py-1 rounded-full shadow-[0_2px_0_0_#ffdad6] text-[13px]">
+<span>🐟</span>
+<span class="font-label-sm text-label-sm text-on-surface">Salmon</span>
+</div>
+</div>
+<span class="text-error/80 font-label-sm text-label-sm font-semibold">Lean Protein</span>
+</div>
+</div>
+</div>
+<!-- Center Plate Seal Badge (Brand Touch) -->
+<div class="absolute w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-[0_2px_8px_rgba(0,0,0,0.12)] pointer-events-none">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+</div>
+</div>
+</div>
+<!-- Macro Balance Gauges Track -->
+<div class="w-full flex flex-col gap-1.5 mt-space-md">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant font-bold">Plate Macro Proportion</span>
+<span class="text-primary font-extrabold tracking-wide">Target: 50 / 25 / 25</span>
+</div>
+<!-- Sliced Progress Bar Meter -->
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden flex shadow-inner">
+<div class="h-full bg-primary-container transition-all duration-500 rounded-l-full" id="bar-greens" style="width: 52%;"></div>
+<div class="h-full bg-secondary-container transition-all duration-500" id="bar-grains" style="width: 24%;"></div>
+<div class="h-full bg-error transition-all duration-500 rounded-r-full" id="bar-protein" style="width: 24%;"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] font-label-sm font-bold pt-0.5">
+<div class="flex items-center gap-1 text-primary">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Veg: <b id="text-veg-pct">52%</b></span>
+</div>
+<div class="flex items-center gap-1 text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>Grains: <b id="text-grains-pct">24%</b></span>
+</div>
+<div class="flex items-center gap-1 text-error">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>Protein: <b id="text-protein-pct">24%</b></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Food Selection Tray Section -->
+<div class="flex flex-col w-full bg-surface-container-lowest rounded-xl p-space-md shadow-[0_4px_0_0_#d8e3fb]">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">restaurant_menu</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Pantry Selection</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">Tap to add</span>
+</div>
+<!-- Horizontal Category Filter Pills -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar -mx-1 px-1">
+<button class="filter-tab active px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-[0_2px_0_0_#00422b] whitespace-nowrap active:scale-95 transition-transform" data-cat="all">All Foods</button>
+<button class="filter-tab px-3.5 py-1.5 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container shadow-[0_2px_0_0_#d8e3fb] whitespace-nowrap active:scale-95 transition-transform" data-cat="veggie">Veggies 🥦</button>
+<button class="filter-tab px-3.5 py-1.5 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container shadow-[0_2px_0_0_#d8e3fb] whitespace-nowrap active:scale-95 transition-transform" data-cat="grain">Grains 🌾</button>
+<button class="filter-tab px-3.5 py-1.5 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container shadow-[0_2px_0_0_#d8e3fb] whitespace-nowrap active:scale-95 transition-transform" data-cat="protein">Protein 🍗</button>
+<button class="filter-tab px-3.5 py-1.5 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container shadow-[0_2px_0_0_#d8e3fb] whitespace-nowrap active:scale-95 transition-transform" data-cat="dairy">Dairy / Sides 🥛</button>
+</div>
+<!-- Selectable Food Items Grid -->
+<div class="grid grid-cols-2 gap-space-xs mt-space-sm" id="food-cards-container">
+<!-- Food Card 1: Grilled Chicken -->
+<button class="food-item-btn flex items-center justify-between p-2.5 rounded-DEFAULT bg-surface-container-low active:bg-surface-container text-left transition-all relative overflow-hidden shadow-[0_3px_0_0_#d8e3fb] active:translate-y-0.5 active:shadow-[0_1px_0_0_#d8e3fb]" data-cal="140 kcal" data-emoji="🍗" data-name="Chicken" data-tag="+Protein" data-type="protein">
+<div class="flex items-center gap-2 min-w-0">
+<span class="text-2xl shrink-0">🍗</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Grilled Chicken</span>
+<span class="font-label-sm text-label-sm text-error font-extrabold">+Protein • 140kcal</span>
+</div>
+</div>
+<span class="badge-check hidden w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm ml-1">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</span>
+</button>
+<!-- Food Card 2: Roasted Sweet Potato -->
+<button class="food-item-btn flex items-center justify-between p-2.5 rounded-DEFAULT bg-surface-container-low active:bg-surface-container text-left transition-all relative overflow-hidden shadow-[0_3px_0_0_#d8e3fb] active:translate-y-0.5 active:shadow-[0_1px_0_0_#d8e3fb]" data-cal="115 kcal" data-emoji="🍠" data-name="Sweet Potato" data-tag="+Carb" data-type="grain">
+<div class="flex items-center gap-2 min-w-0">
+<span class="text-2xl shrink-0">🍠</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Sweet Potato</span>
+<span class="font-label-sm text-label-sm text-secondary font-extrabold">+Carb • 115kcal</span>
+</div>
+</div>
+<span class="badge-check hidden w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm ml-1">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</span>
+</button>
+<!-- Food Card 3: Mixed Berries -->
+<button class="food-item-btn flex items-center justify-between p-2.5 rounded-DEFAULT bg-surface-container-low active:bg-surface-container text-left transition-all relative overflow-hidden shadow-[0_3px_0_0_#d8e3fb] active:translate-y-0.5 active:shadow-[0_1px_0_0_#d8e3fb]" data-cal="45 kcal" data-emoji="🫐" data-name="Berries" data-tag="+Antioxidants" data-type="veggie">
+<div class="flex items-center gap-2 min-w-0">
+<span class="text-2xl shrink-0">🫐</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Mixed Berries</span>
+<span class="font-label-sm text-label-sm text-tertiary font-extrabold">+Antioxidant</span>
+</div>
+</div>
+<span class="badge-check hidden w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm ml-1">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</span>
+</button>
+<!-- Food Card 4: Greek Yogurt -->
+<button class="food-item-btn flex items-center justify-between p-2.5 rounded-DEFAULT bg-surface-container-low active:bg-surface-container text-left transition-all relative overflow-hidden shadow-[0_3px_0_0_#d8e3fb] active:translate-y-0.5 active:shadow-[0_1px_0_0_#d8e3fb]" data-cal="90 kcal" data-emoji="🥣" data-name="Greek Yogurt" data-tag="+Probiotics" data-type="dairy">
+<div class="flex items-center gap-2 min-w-0">
+<span class="text-2xl shrink-0">🥣</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Greek Yogurt</span>
+<span class="font-label-sm text-label-sm text-primary font-extrabold">+Probiotics</span>
+</div>
+</div>
+<span class="badge-check hidden w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm ml-1">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</span>
+</button>
+<!-- Food Card 5: Avocado Slices -->
+<button class="food-item-btn flex items-center justify-between p-2.5 rounded-DEFAULT bg-surface-container-low active:bg-surface-container text-left transition-all relative overflow-hidden shadow-[0_3px_0_0_#d8e3fb] active:translate-y-0.5 active:shadow-[0_1px_0_0_#d8e3fb]" data-cal="120 kcal" data-emoji="🥑" data-name="Avocado" data-tag="+Healthy Fats" data-type="veggie">
+<div class="flex items-center gap-2 min-w-0">
+<span class="text-2xl shrink-0">🥑</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Avocado Slices</span>
+<span class="font-label-sm text-label-sm text-primary-container font-extrabold">+Good Fats</span>
+</div>
+</div>
+<span class="badge-check hidden w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm ml-1">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</span>
+</button>
+<!-- Food Card 6: Crisp Apple (Inspiration theme) -->
+<button class="food-item-btn flex items-center justify-between p-2.5 rounded-DEFAULT bg-surface-container-low active:bg-surface-container text-left transition-all relative overflow-hidden shadow-[0_3px_0_0_#d8e3fb] active:translate-y-0.5 active:shadow-[0_1px_0_0_#d8e3fb]" data-cal="55 kcal" data-emoji="🍏" data-name="Green Apple" data-tag="+Fiber &amp; Star" data-type="veggie">
+<div class="flex items-center gap-2 min-w-0">
+<span class="text-2xl shrink-0">🍏</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Green Apple</span>
+<span class="font-label-sm text-label-sm text-primary font-extrabold">+Fiber Boost</span>
+</div>
+</div>
+<span class="badge-check hidden w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm ml-1">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</span>
+</button>
+</div>
+</div>
+<!-- Real-Time AI Feedback Box -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-[0_4px_0_0_#d8e3fb] transition-all" id="feedback-card">
+<div class="flex items-center gap-2 mb-1">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center text-xs shadow-sm">
+        ★
+      </div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold">Nutrition Coach Feedback</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" id="feedback-content">
+      🌟 <strong class="text-on-surface font-bold">Awesome balance!</strong> Your plate has 52% colorful produce, 24% fiber-rich grains, and 24% lean protein. Tip: Add a glass of water for a maximum hydration combo!
+    </p>
+<!-- Micro Level-Up Quest Badge -->
+<div class="flex items-center justify-between mt-3 pt-2.5 bg-surface-container-low rounded-DEFAULT px-3 py-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Master Plate Builder</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-primary-fixed px-2 py-0.5 rounded-full font-black">+50 XP Ready</span>
+</div>
+</div>
+<!-- Main Tactile Action Controls -->
+<div class="flex flex-col gap-space-xs mt-1">
+<!-- Primary CTA: 3D Chunky Leaf Button -->
+<button class="w-full h-13 py-3.5 px-6 rounded-full bg-primary-container text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-[0_5px_0_0_#006c49,0_10px_20px_rgba(0,108,73,0.2)] active:translate-y-1 active:shadow-[0_1px_0_0_#006c49] transition-all" id="check-plate-btn">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Check My Plate</span>
+</button>
+<!-- Secondary Row: Reset / Save Meal -->
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="w-full py-3 rounded-full bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-1.5 shadow-[0_3px_0_0_#bbcabf] active:translate-y-0.5 active:shadow-[0_1px_0_0_#bbcabf] transition-all" id="save-meal-btn">
+<span class="material-symbols-outlined text-[18px] text-primary">bookmark</span>
+<span>Save Plate</span>
+</button>
+<button class="w-full py-3 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-lg text-label-lg flex items-center justify-center gap-1.5 shadow-[0_3px_0_0_#ffb95f] active:translate-y-0.5 active:shadow-[0_1px_0_0_#ffb95f] transition-all" id="next-quest-btn">
+<span class="material-symbols-outlined text-[18px] text-secondary">sports_esports</span>
+<span>Next Quest</span>
+</button>
+</div>
+</div>
+<!-- Toast Notification Overlay Container -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded-full shadow-2xl flex items-center gap-2 opacity-0 pointer-events-none transition-opacity duration-300 z-50" id="toast">
+<span class="material-symbols-outlined text-[18px] text-inverse-primary" id="toast-icon">check_circle</span>
+<span class="font-label-md text-label-md font-bold" id="toast-text">Plate updated!</span>
+</div>
+</div>
+<script>
+  (function() {
+    // State representation of the plate
+    const plateState = {
+      veggie: [
+        { name: 'Broccoli', emoji: '🥦' },
+        { name: 'Spinach', emoji: '🥗' }
+      ],
+      grain: [
+        { name: 'Quinoa', emoji: '🌾' }
+      ],
+      protein: [
+        { name: 'Salmon', emoji: '🐟' }
+      ],
+      dairy: []
+    };
+
+    const containerVeggie = document.getElementById('plate-items-veggie');
+    const containerGrain = document.getElementById('plate-items-grain');
+    const containerProtein = document.getElementById('plate-items-protein');
+
+    const barGreens = document.getElementById('bar-greens');
+    const barGrains = document.getElementById('bar-grains');
+    const barProtein = document.getElementById('bar-protein');
+
+    const textVegPct = document.getElementById('text-veg-pct');
+    const textGrainsPct = document.getElementById('text-grains-pct');
+    const textProteinPct = document.getElementById('text-protein-pct');
+
+    const scoreBadge = document.getElementById('score-badge');
+    const feedbackBox = document.getElementById('feedback-content');
+    const toast = document.getElementById('toast');
+    const toastText = document.getElementById('toast-text');
+
+    function showToast(msg) {
+      if (!toast) return;
+      toastText.textContent = msg;
+      toast.classList.remove('opacity-0');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0');
+      }, 1800);
+    }
+
+    function renderPlate() {
+      // Veggie Container
+      containerVeggie.innerHTML = plateState.veggie.map(item => `
+        <div class="flex items-center gap-1 bg-surface-container-lowest px-2 py-1 rounded-full shadow-[0_2px_0_0_#bbcabf] text-[12px] animate-fade-in">
+          <span>${item.emoji}</span>
+          <span class="font-label-sm text-label-sm text-on-surface">${item.name}</span>
+        </div>
+      `).join('');
+
+      // Grain Container
+      containerGrain.innerHTML = plateState.grain.map(item => `
+        <div class="flex items-center gap-1 bg-surface-container-lowest px-2 py-1 rounded-full shadow-[0_2px_0_0_#ffddb8] text-[12px] animate-fade-in">
+          <span>${item.emoji}</span>
+          <span class="font-label-sm text-label-sm text-on-surface">${item.name}</span>
+        </div>
+      `).join('');
+
+      // Protein Container
+      containerProtein.innerHTML = plateState.protein.map(item => `
+        <div class="flex items-center gap-1 bg-surface-container-lowest px-2 py-1 rounded-full shadow-[0_2px_0_0_#ffdad6] text-[12px] animate-fade-in">
+          <span>${item.emoji}</span>
+          <span class="font-label-sm text-label-sm text-on-surface">${item.name}</span>
+        </div>
+      `).join('');
+
+      // Recalculate Distribution
+      const totalVeg = plateState.veggie.length;
+      const totalGrain = plateState.grain.length;
+      const totalProtein = plateState.protein.length;
+      const totalItems = (totalVeg + totalGrain + totalProtein) || 1;
+
+      const pctVeg = Math.round((totalVeg / totalItems) * 100);
+      const pctGrain = Math.round((totalGrain / totalItems) * 100);
+      const pctProtein = Math.max(0, 100 - pctVeg - pctGrain);
+
+      barGreens.style.width = pctVeg + '%';
+      barGrains.style.width = pctGrain + '%';
+      barProtein.style.width = pctProtein + '%';
+
+      textVegPct.textContent = pctVeg + '%';
+      textGrainsPct.textContent = pctGrain + '%';
+      textProteinPct.textContent = pctProtein + '%';
+
+      // Live Score Calculation based on proximity to 50 / 25 / 25
+      const errorVeg = Math.abs(pctVeg - 50);
+      const errorGrain = Math.abs(pctGrain - 25);
+      const errorProtein = Math.abs(pctProtein - 25);
+      const totalError = errorVeg + errorGrain + errorProtein;
+      const calculatedScore = Math.max(20, Math.min(99, 100 - Math.round(totalError * 0.8)));
+
+      scoreBadge.textContent = calculatedScore + '/100';
+    }
+
+    // Food Button Click handlers
+    document.querySelectorAll('.food-item-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const type = btn.getAttribute('data-type');
+        const name = btn.getAttribute('data-name');
+        const emoji = btn.getAttribute('data-emoji');
+        const checkBadge = btn.querySelector('.badge-check');
+
+        const section = (type === 'veggie' || type === 'grain' || type === 'protein') ? type : 'veggie';
+        const existsIndex = plateState[section].findIndex(i => i.name === name);
+
+        if (existsIndex > -1) {
+          plateState[section].splice(existsIndex, 1);
+          btn.classList.remove('bg-primary-fixed/40');
+          if (checkBadge) {
+            checkBadge.classList.add('hidden');
+            checkBadge.classList.remove('flex');
+          }
+          showToast(`Removed ${name}`);
+        } else {
+          plateState[section].push({ name, emoji });
+          btn.classList.add('bg-primary-fixed/40');
+          if (checkBadge) {
+            checkBadge.classList.remove('hidden');
+            checkBadge.classList.add('flex');
+          }
+          showToast(`Added ${emoji} ${name} to Plate!`);
+        }
+
+        renderPlate();
+      });
+    });
+
+    // Check Plate Evaluation CTA
+    const checkBtn = document.getElementById('check-plate-btn');
+    if (checkBtn) {
+      checkBtn.addEventListener('click', () => {
+        const totalVeg = plateState.veggie.length;
+        const totalGrain = plateState.grain.length;
+        const totalProtein = plateState.protein.length;
+
+        if (totalVeg >= 2 && totalGrain >= 1 && totalProtein >= 1) {
+          feedbackBox.innerHTML = `🌟 <strong class="text-primary font-bold">Incredible Balance!</strong> Your plate hits the golden ratio! You earned <span class="text-primary font-extrabold">+50 NutriPoints</span>. Perfect macro variety!`;
+          scoreBadge.textContent = '95/100';
+          showToast('Plate Validated: ★ Excellent Combo!');
+        } else if (totalVeg < 2) {
+          feedbackBox.innerHTML = `🥦 <strong class="text-secondary font-bold">Needs More Greens:</strong> Try adding another leafy green or fruit to reach the 50% plant target!`;
+          showToast('Tip: Fill half with produce!');
+        } else {
+          feedbackBox.innerHTML = `⚖️ <strong class="text-on-surface font-bold">Almost there:</strong> Double-check your protein and complex grain sectors for all-day stamina.`;
+          showToast('Looking balanced!');
+        }
+      });
+    }
+
+    // Clear / Reset Plate
+    const clearBtn = document.getElementById('quick-clear-btn');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        plateState.veggie = [];
+        plateState.grain = [];
+        plateState.protein = [];
+        document.querySelectorAll('.badge-check').forEach(b => {
+          b.classList.add('hidden');
+          b.classList.remove('flex');
+        });
+        document.querySelectorAll('.food-item-btn').forEach(b => {
+          b.classList.remove('bg-primary-fixed/40');
+        });
+        renderPlate();
+        showToast('Plate cleared!');
+      });
+    }
+
+    // Category Filter Navigation
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        filterTabs.forEach(t => {
+          t.classList.remove('active', 'bg-primary', 'text-on-primary', 'shadow-[0_2px_0_0_#00422b]');
+          t.classList.add('bg-surface-container-low', 'text-on-surface', 'shadow-[0_2px_0_0_#d8e3fb]');
+        });
+        tab.classList.add('active', 'bg-primary', 'text-on-primary', 'shadow-[0_2px_0_0_#00422b]');
+        tab.classList.remove('bg-surface-container-low', 'text-on-surface', 'shadow-[0_2px_0_0_#d8e3fb]');
+
+        const cat = tab.getAttribute('data-cat');
+        document.querySelectorAll('.food-item-btn').forEach(card => {
+          const type = card.getAttribute('data-type');
+          if (cat === 'all' || type === cat) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Save Meal Action
+    const saveBtn = document.getElementById('save-meal-btn');
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        showToast('💾 Lunch configuration saved to diary!');
+      });
+    }
+
+    // Countdown Timer simulation
+    let secondsLeft = 105;
+    const timerElem = document.getElementById('game-timer');
+    if (timerElem) {
+      setInterval(() => {
+        if (secondsLeft > 0) {
+          secondsLeft--;
+          const m = String(Math.floor(secondsLeft / 60)).padStart(2, '0');
+          const s = String(secondsLeft % 60).padStart(2, '0');
+          timerElem.textContent = `${m}:${s}`;
+        }
+      }, 1000);
+    }
+  })();
+</script></main></body></html>

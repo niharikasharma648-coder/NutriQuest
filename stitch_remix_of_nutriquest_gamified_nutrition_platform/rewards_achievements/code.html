@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#f9f9ff;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-variant": "#d8e3fb", "primary": "#006c49", "on-primary-container": "#00422b", "on-background": "#111c2d", "on-primary": "#ffffff", "on-surface": "#111c2d", "tertiary-fixed": "#e9ddff", "on-error-container": "#93000a", "on-surface-variant": "#3c4a42", "background": "#f9f9ff", "on-tertiary-fixed-variant": "#5516be", "on-primary-fixed": "#002113", "inverse-surface": "#263143", "on-secondary-fixed-variant": "#653e00", "surface": "#f9f9ff", "secondary-fixed": "#ffddb8", "on-tertiary-container": "#4600a7", "inverse-on-surface": "#ecf1ff", "on-tertiary": "#ffffff", "outline": "#6c7a71", "outline-variant": "#bbcabf", "on-error": "#ffffff", "tertiary-fixed-dim": "#d0bcff", "surface-container-lowest": "#ffffff", "surface-tint": "#006c49", "surface-dim": "#cfdaf2", "on-tertiary-fixed": "#23005c", "error": "#ba1a1a", "surface-bright": "#f9f9ff", "inverse-primary": "#4edea3", "error-container": "#ffdad6", "primary-fixed-dim": "#4edea3", "secondary-fixed-dim": "#ffb95f", "tertiary-container": "#b090ff", "surface-container-low": "#f0f3ff", "tertiary": "#6d3bd7", "surface-container": "#e7eeff", "on-primary-fixed-variant": "#005236", "surface-container-highest": "#d8e3fb", "on-secondary-container": "#684000", "primary-fixed": "#6ffbbe", "on-secondary-fixed": "#2a1700", "surface-container-high": "#dee8ff", "primary-container": "#10b981", "secondary": "#855300", "secondary-container": "#fea619", "on-secondary": "#ffffff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-xl": "2.25rem", "margin-desktop": "2.5rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "margin": "1.25rem", "gutter": "1.25rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem", "gutter-desktop": "1.5rem", "space-md": "1rem" }, "fontFamily": { "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "body-md": ["15px", {"lineHeight": "22px", "fontWeight": "450"}], "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "450"}], "body-lg": ["17px", {"lineHeight": "26px", "fontWeight": "500"}], "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "700"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "700"}], "display-lg": ["44px", {"lineHeight": "52px", "letterSpacing": "-0.03em", "fontWeight": "800"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700"}], "display-lg-mobile": ["34px", {"lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "800"}], "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800"}], "headline-sm": ["18px", {"lineHeight": "24px", "fontWeight": "700"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "800"}], "headline-xl-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "750"}], "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,108,73,0.06)]"><div class="h-24 px-margin-mobile flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="NutriQuest Brand Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtv8-0uZn_4aOpj84seTweDEjjPEODrbxyD_C7ZqTwL1Pq_hjUiUCqg454_OfZK2eYP7UANCpfHlN3sJphWeuZgGR3mWgfUwxzozO6TpIY96nNvOOAei4sCHjI1Ek-GUrhiBRseHqYk7meRvzEwjhubT7Mz3AtrqKL9pyOcUUqo22tlrdmvyT0RjE2xrJZYyx-lnhHVIeXqNSegcKNSterKNE3-gvh124SeRzy9Ytd2jtxFd30si6y"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-extrabold truncate leading-tight">NutriQuest</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Rewards</span></div></div><div class="flex items-center gap-space-xs shrink-0"><div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm shadow-[0_2px_0_0_#ffddb8]"><span class="text-xs leading-none">🔥</span><span class="font-extrabold">3</span></div><div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm shadow-[0_2px_0_0_#4edea3]"><span class="material-symbols-outlined text-[14px] leading-none text-primary">bolt</span><span class="font-extrabold">+420 XP</span></div><a class="relative shrink-0 block rounded-full ring-2 ring-primary/20 shadow-[0_2px_4px_rgba(0,0,0,0.08)] ml-1" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg5rAbDpK4wxKlyipurQ69zCAooLli5Lax05F0lOQFcin6o9qxFkFmBNh4tOzusShvKTjeSw2RGDGAlVLG4M36va_NiyS0OLVHM5VpAfoKOOVXfmDy_xbdgvxHKfNh2XJMnvD3UAlE_CAIqV8N4VC8C0RZv3MoaPtsFdl8XVYFjtM4KGLbYwA2XFiNQ4UCNaSQcNskq-n19nfqbbO1oRPEbhKRuHskZUlS4juyD2Ug2ppY40Ywdo19"/></a></div></div><div class="flex items-center justify-between px-space-xs"><div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px] text-secondary">military_tech</span><span class="font-bold">Lv. 4 Quest Novice</span></div><div class="flex items-center gap-2 flex-1 max-w-[130px] ml-3"><div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden p-[1px]"><div class="h-full bg-primary rounded-full w-[68%]"></div></div><span class="font-label-sm text-[10px] text-on-surface-variant font-bold">68%</span></div></div></div></header><main class="flex flex-col relative w-full pt-24 pb-28 bg-surface"><div class="flex flex-col w-full px-margin-mobile pb-8 space-y-space-md">
+<!-- Header Banner Section -->
+<div class="relative overflow-hidden rounded-lg bg-surface-container p-space-md shadow-sm">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 bg-primary/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="absolute -left-4 -top-4 w-20 h-20 bg-secondary-container/20 rounded-full blur-lg pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-1.5 self-start px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed shadow-[0_2px_0_0_#4edea3]">
+<span class="material-symbols-outlined text-[14px] leading-none" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Hall of Fame</span>
+</div>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface tracking-tight font-extrabold flex items-center gap-2">
+        Trophy Room &amp; Rewards 🏆
+      </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Every healthy meal and quiz brings you closer to legendary status! Level up to unlock rare swag.
+      </p>
+</div>
+</div>
+<!-- Main XP & Level Progress Card -->
+<div class="relative rounded-lg bg-surface-container-lowest p-space-md shadow-[0_6px_0_0_#d8e3fb] transition-all">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center shadow-[inset_0_2px_4px_rgba(0,108,73,0.15)]">
+<span class="material-symbols-outlined text-primary text-[28px]" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm font-extrabold uppercase text-primary">Rank Progress</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-[10px]">Tier 1</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-extrabold flex items-center gap-1.5">
+<span>Lv. 4 Quest Novice</span>
+<span class="material-symbols-outlined text-[16px] text-outline">arrow_forward</span>
+<span class="text-secondary font-bold">Lv. 5</span>
+</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary">70%</span>
+</div>
+</div>
+<!-- Liquid Progress Bar -->
+<div class="space-y-1.5 mb-space-md">
+<div class="flex justify-between items-center font-label-sm text-label-sm text-on-surface-variant font-semibold">
+<span class="flex items-center gap-1 text-on-surface"><span class="text-primary font-bold">420</span> / 600 XP</span>
+<span class="text-secondary font-bold">180 XP to Nutrition Adept</span>
+</div>
+<div class="relative w-full h-4 rounded-full bg-surface-container-high overflow-hidden p-[2px] shadow-[inset_0_2px_4px_rgba(0,0,0,0.08)]">
+<div class="h-full rounded-full bg-gradient-to-r from-primary via-primary-container to-primary-fixed-dim shadow-[0_2px_4px_rgba(0,108,73,0.4)] transition-all duration-700 ease-out flex items-center justify-end pr-1" style="width: 70%;">
+<div class="w-2 h-2 rounded-full bg-white opacity-80 animate-ping"></div>
+</div>
+</div>
+</div>
+<!-- Lifetime Stats Pills -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs">
+<div class="flex flex-col items-center justify-center p-2 rounded-DEFAULT bg-surface-container-low shadow-[0_3px_0_0_#dee8ff]">
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase font-bold">Total XP</span>
+<span class="font-label-lg text-label-lg font-extrabold text-on-surface flex items-center gap-0.5 mt-0.5">
+<span class="text-sm">🌟</span> 2,420
+        </span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 rounded-DEFAULT bg-surface-container-low shadow-[0_3px_0_0_#dee8ff]">
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase font-bold">Badges</span>
+<span class="font-label-lg text-label-lg font-extrabold text-on-surface flex items-center gap-0.5 mt-0.5">
+<span class="text-sm">🏅</span> 8/18
+        </span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 rounded-DEFAULT bg-surface-container-low shadow-[0_3px_0_0_#dee8ff]">
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase font-bold">Streak</span>
+<span class="font-label-lg text-label-lg font-extrabold text-secondary flex items-center gap-0.5 mt-0.5">
+<span class="text-sm">🔥</span> 7 Days
+        </span>
+</div>
+</div>
+</div>
+<!-- Milestone Unlock Reward Preview -->
+<div class="relative overflow-hidden rounded-lg bg-gradient-to-br from-tertiary-fixed via-surface-container-high to-secondary-fixed p-space-md shadow-[0_4px_0_0_#d0bcff]">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="space-y-1 min-w-0">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-[10px] uppercase font-extrabold">
+<span class="material-symbols-outlined text-[12px]">lock_open</span> Next Level Reward
+        </div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-extrabold truncate">
+          Chef Hat &amp; 2x XP Potion
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Hit Level 5: Nutrition Adept to equip this rare cosmetic avatar hat and double quest XP for 24 hours.
+        </p>
+</div>
+<div class="relative shrink-0 w-16 h-16 rounded-full bg-surface-container-lowest shadow-[0_4px_0_0_#bbcabf] flex items-center justify-center">
+<span class="text-3xl filter drop-shadow">👨‍🍳</span>
+<div class="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-sm text-[10px] font-black shadow-sm">
+          2x
+        </div>
+</div>
+</div>
+<div class="mt-space-md flex items-center gap-space-sm">
+<button class="flex-1 py-2.5 px-4 rounded-full bg-surface-dim text-on-surface-variant font-label-md text-label-md font-extrabold opacity-75 cursor-not-allowed shadow-[0_3px_0_0_#bbcabf] flex items-center justify-center gap-1.5" disabled="">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span>Locked until Level 5</span>
+</button>
+<button class="px-3 py-2.5 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md font-extrabold shadow-[0_3px_0_0_#dee8ff] active:translate-y-1 transition-transform" onclick="alert('Earn +180 more XP by completing the daily Citrus Quiz or logging lunch!')">
+<span class="material-symbols-outlined text-[18px]">info</span>
+</button>
+</div>
+</div>
+<!-- Badges Filter Segmented Control -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 pt-1 scrollbar-none" id="filter-bar">
+<button class="badge-filter-btn px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold shadow-[0_3px_0_0_#00422b] shrink-0 active:translate-y-0.5 transition-all" data-category="all">
+      All Badges (8/18)
+    </button>
+<button class="badge-filter-btn px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-bold shadow-[0_3px_0_0_#d8e3fb] shrink-0 active:translate-y-0.5 transition-all" data-category="milestones">
+      Milestones
+    </button>
+<button class="badge-filter-btn px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-bold shadow-[0_3px_0_0_#d8e3fb] shrink-0 active:translate-y-0.5 transition-all" data-category="habits">
+      Habits
+    </button>
+<button class="badge-filter-btn px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-bold shadow-[0_3px_0_0_#d8e3fb] shrink-0 active:translate-y-0.5 transition-all" data-category="gamemasters">
+      Game Masters
+    </button>
+</div>
+<!-- Showcase Gallery (Grid of Badges) -->
+<div class="grid grid-cols-1 gap-space-sm" id="badges-container">
+<!-- 1. First Quest (Unlocked) -->
+<div class="badge-card relative p-space-md rounded-lg bg-surface-container-lowest shadow-[0_4px_0_0_#ffddb8] flex items-center gap-space-md group" data-category="milestones">
+<div class="relative shrink-0 w-16 h-16 rounded-full bg-gradient-to-tr from-secondary-fixed to-secondary-container flex items-center justify-center shadow-[inset_0_2px_0_0_rgba(255,255,255,0.6),0_4px_10px_rgba(254,166,25,0.3)]">
+<span class="text-3xl filter drop-shadow">🏆</span>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-[12px] shadow-sm">
+          ✓
+        </div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold truncate">First Quest</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold">Gold</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Completed your very first nutrition challenge!</p>
+<span class="inline-block mt-1 font-label-sm text-[10px] text-primary font-bold">Unlocked 3d ago • +50 XP</span>
+</div>
+</div>
+<!-- 2. Balanced Plate (Unlocked) -->
+<div class="badge-card relative p-space-md rounded-lg bg-surface-container-lowest shadow-[0_4px_0_0_#4edea3] flex items-center gap-space-md" data-category="habits">
+<div class="relative shrink-0 w-16 h-16 rounded-full bg-gradient-to-tr from-primary-fixed to-primary-container flex items-center justify-center shadow-[inset_0_2px_0_0_rgba(255,255,255,0.6),0_4px_12px_rgba(16,185,129,0.35)]">
+<span class="text-3xl filter drop-shadow">🥗</span>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-[12px] shadow-sm">
+          ✓
+        </div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold truncate">Balanced Plate</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-bold">Emerald</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Constructed 10 perfectly balanced macro meals.</p>
+<span class="inline-block mt-1 font-label-sm text-[10px] text-primary font-bold">Unlocked Yesterday • +100 XP</span>
+</div>
+</div>
+<!-- 3. Hydration Hero (Unlocked) -->
+<div class="badge-card relative p-space-md rounded-lg bg-surface-container-lowest shadow-[0_4px_0_0_#bbcabf] flex items-center gap-space-md" data-category="habits">
+<div class="relative shrink-0 w-16 h-16 rounded-full bg-gradient-to-tr from-surface-variant to-surface-container-highest flex items-center justify-center shadow-[inset_0_2px_0_0_rgba(255,255,255,0.8),0_4px_10px_rgba(0,108,73,0.15)]">
+<span class="text-3xl filter drop-shadow">💧</span>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-[12px] shadow-sm">
+          ✓
+        </div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold truncate">Hydration Hero</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-bold">Shield</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Logged 6+ glasses of water 5 days in a row.</p>
+<span class="inline-block mt-1 font-label-sm text-[10px] text-primary font-bold">Unlocked 5d ago • +75 XP</span>
+</div>
+</div>
+<!-- 4. Fruit Explorer (Unlocked) -->
+<div class="badge-card relative p-space-md rounded-lg bg-surface-container-lowest shadow-[0_4px_0_0_#ffdad6] flex items-center gap-space-md" data-category="habits">
+<div class="relative shrink-0 w-16 h-16 rounded-full bg-gradient-to-tr from-error-container to-surface-container-highest flex items-center justify-center shadow-[inset_0_2px_0_0_rgba(255,255,255,0.7),0_4px_10px_rgba(186,26,26,0.2)]">
+<span class="text-3xl filter drop-shadow">🍎</span>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-[12px] shadow-sm">
+          ✓
+        </div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold truncate">Fruit Explorer</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-bold">Ruby</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Tasted and logged 12 distinct varieties of fresh fruit.</p>
+<span class="inline-block mt-1 font-label-sm text-[10px] text-primary font-bold">Unlocked 1w ago • +80 XP</span>
+</div>
+</div>
+<!-- 5. 7-Day Streak (Unlocked) -->
+<div class="badge-card relative p-space-md rounded-lg bg-surface-container-lowest shadow-[0_4px_0_0_#ffb95f] flex items-center gap-space-md" data-category="milestones">
+<div class="relative shrink-0 w-16 h-16 rounded-full bg-gradient-to-tr from-secondary to-secondary-container flex items-center justify-center shadow-[inset_0_2px_0_0_rgba(255,255,255,0.6),0_4px_14px_rgba(254,166,25,0.4)] animate-pulse">
+<span class="text-3xl filter drop-shadow">🔥</span>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-[12px] shadow-sm">
+          ✓
+        </div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold truncate">7-Day Streak</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold">Fire</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Maintained daily quests for 7 consecutive days!</p>
+<span class="inline-block mt-1 font-label-sm text-[10px] text-secondary font-bold">Active Right Now • +150 XP</span>
+</div>
+</div>
+<!-- 6. Sugar Sleuth (Locked) -->
+<div class="badge-card relative p-space-md rounded-lg bg-surface-container-low shadow-[0_4px_0_0_#dee8ff] flex items-center gap-space-md opacity-90" data-category="gamemasters">
+<div class="relative shrink-0 w-16 h-16 rounded-full bg-surface-dim flex items-center justify-center shadow-[inset_0_2px_4px_rgba(0,0,0,0.1)]">
+<span class="text-2xl filter grayscale opacity-40">🔍</span>
+<div class="absolute inset-0 rounded-full flex items-center justify-center bg-inverse-surface/10 backdrop-blur-[1px]">
+<span class="material-symbols-outlined text-outline text-[22px]">lock</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Sugar Sleuth</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-bold">2/3 Done</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Score 100% in Sugar Detective hard mode.</p>
+<div class="w-full bg-surface-container-highest h-2 rounded-full mt-2 overflow-hidden">
+<div class="bg-outline h-full rounded-full w-2/3"></div>
+</div>
+</div>
+</div>
+<!-- 7. Rainbow Master (Locked) -->
+<div class="badge-card relative p-space-md rounded-lg bg-surface-container-low shadow-[0_4px_0_0_#dee8ff] flex items-center gap-space-md opacity-90" data-category="habits">
+<div class="relative shrink-0 w-16 h-16 rounded-full bg-surface-dim flex items-center justify-center shadow-[inset_0_2px_4px_rgba(0,0,0,0.1)]">
+<span class="text-2xl filter grayscale opacity-40">🌈</span>
+<div class="absolute inset-0 rounded-full flex items-center justify-center bg-inverse-surface/10 backdrop-blur-[1px]">
+<span class="material-symbols-outlined text-outline text-[22px]">lock</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Rainbow Master</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-bold">3/5 Today</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Eat 5 distinct vibrant colors of produce in one day.</p>
+<div class="w-full bg-surface-container-highest h-2 rounded-full mt-2 overflow-hidden">
+<div class="bg-outline h-full rounded-full w-3/5"></div>
+</div>
+</div>
+</div>
+<!-- 8. Macro Guru (Locked) -->
+<div class="badge-card relative p-space-md rounded-lg bg-surface-container-low shadow-[0_4px_0_0_#dee8ff] flex items-center gap-space-md opacity-90" data-category="gamemasters">
+<div class="relative shrink-0 w-16 h-16 rounded-full bg-surface-dim flex items-center justify-center shadow-[inset_0_2px_4px_rgba(0,0,0,0.1)]">
+<span class="text-2xl filter grayscale opacity-40">🧠</span>
+<div class="absolute inset-0 rounded-full flex items-center justify-center bg-inverse-surface/10 backdrop-blur-[1px]">
+<span class="material-symbols-outlined text-outline text-[22px]">lock</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Macro Guru</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-bold">0/10 Quizzes</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Ace all 10 Macronutrient Academy quizzes with gold rank.</p>
+<div class="w-full bg-surface-container-highest h-2 rounded-full mt-2 overflow-hidden">
+<div class="bg-outline h-full rounded-full w-0"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Sparkle Action Button -->
+<div class="pt-space-xs">
+<button class="w-full py-4 px-space-md rounded-full bg-primary text-on-primary font-label-lg text-label-lg font-extrabold shadow-[0_5px_0_0_#00422b] active:translate-y-1 active:shadow-[0_1px_0_0_#00422b] transition-all flex items-center justify-center gap-2" id="mystery-chest-btn">
+<span class="text-xl">✨</span>
+<span>Inspect Daily Mystery Chest</span>
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+<!-- Client-side tab filter behavior -->
+<script>
+    (function() {
+      const filterBtns = document.querySelectorAll('.badge-filter-btn');
+      const cards = document.querySelectorAll('.badge-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Reset button styles
+          filterBtns.forEach(b => {
+            b.className = 'badge-filter-btn px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-bold shadow-[0_3px_0_0_#d8e3fb] shrink-0 active:translate-y-0.5 transition-all';
+          });
+          // Highlight active button
+          btn.className = 'badge-filter-btn px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold shadow-[0_3px_0_0_#00422b] shrink-0 active:translate-y-0.5 transition-all';
+
+          const category = btn.getAttribute('data-category');
+
+          cards.forEach(card => {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      const chestBtn = document.getElementById('mystery-chest-btn');
+      if (chestBtn) {
+        chestBtn.addEventListener('click', () => {
+          chestBtn.innerHTML = '<span>🎁 Already Claimed! Next drop in 4h 12m</span>';
+          chestBtn.disabled = true;
+          chestBtn.className = 'w-full py-4 px-space-md rounded-full bg-surface-dim text-on-surface-variant font-label-lg text-label-lg font-extrabold shadow-[0_3px_0_0_#bbcabf] cursor-default flex items-center justify-center gap-2';
+        });
+      }
+    })();
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[50px] h-12 text-on-surface-variant transition-transform active:scale-95" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center min-w-[50px] h-12 text-on-surface-variant transition-transform active:scale-95" data-path="quests" href="#"><span class="material-symbols-outlined text-[24px]">explore</span><span class="font-label-sm text-label-sm">Quests</span></a><a class="flex flex-col items-center justify-center min-w-[50px] h-12 text-on-surface-variant transition-transform active:scale-95" data-path="games" href="#"><span class="material-symbols-outlined text-[24px]">sports_esports</span><span class="font-label-sm text-label-sm">Games</span></a><a class="flex flex-col items-center justify-center min-w-[50px] h-12 text-on-surface-variant transition-transform active:scale-95" data-path="learn" href="#"><span class="material-symbols-outlined text-[24px]">menu_book</span><span class="font-label-sm text-label-sm">Learn</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[50px] h-12 transition-transform active:scale-95 text-primary font-bold" data-path="rewards" href="#"><span class="material-symbols-outlined text-[24px]">redeem</span><span class="font-label-sm text-label-sm">Rewards</span></a><a class="flex flex-col items-center justify-center min-w-[50px] h-12 text-on-surface-variant transition-transform active:scale-95" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm">Profile</span></a></div></nav></body></html>

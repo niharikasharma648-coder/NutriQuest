@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#f9f9ff;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-variant": "#d8e3fb", "primary": "#006c49", "on-primary-container": "#00422b", "on-background": "#111c2d", "on-primary": "#ffffff", "on-surface": "#111c2d", "tertiary-fixed": "#e9ddff", "on-error-container": "#93000a", "on-surface-variant": "#3c4a42", "background": "#f9f9ff", "on-tertiary-fixed-variant": "#5516be", "on-primary-fixed": "#002113", "inverse-surface": "#263143", "on-secondary-fixed-variant": "#653e00", "surface": "#f9f9ff", "secondary-fixed": "#ffddb8", "on-tertiary-container": "#4600a7", "inverse-on-surface": "#ecf1ff", "on-tertiary": "#ffffff", "outline": "#6c7a71", "outline-variant": "#bbcabf", "on-error": "#ffffff", "tertiary-fixed-dim": "#d0bcff", "surface-container-lowest": "#ffffff", "surface-tint": "#006c49", "surface-dim": "#cfdaf2", "on-tertiary-fixed": "#23005c", "error": "#ba1a1a", "surface-bright": "#f9f9ff", "inverse-primary": "#4edea3", "error-container": "#ffdad6", "primary-fixed-dim": "#4edea3", "secondary-fixed-dim": "#ffb95f", "tertiary-container": "#b090ff", "surface-container-low": "#f0f3ff", "tertiary": "#6d3bd7", "surface-container": "#e7eeff", "on-primary-fixed-variant": "#005236", "surface-container-highest": "#d8e3fb", "on-secondary-container": "#684000", "primary-fixed": "#6ffbbe", "on-secondary-fixed": "#2a1700", "surface-container-high": "#dee8ff", "primary-container": "#10b981", "secondary": "#855300", "secondary-container": "#fea619", "on-secondary": "#ffffff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-xl": "2.25rem", "margin-desktop": "2.5rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "margin": "1.25rem", "gutter": "1.25rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem", "gutter-desktop": "1.5rem", "space-md": "1rem" }, "fontFamily": { "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "body-md": ["15px", {"lineHeight": "22px", "fontWeight": "450"}], "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "450"}], "body-lg": ["17px", {"lineHeight": "26px", "fontWeight": "500"}], "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "700"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "700"}], "display-lg": ["44px", {"lineHeight": "52px", "letterSpacing": "-0.03em", "fontWeight": "800"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700"}], "display-lg-mobile": ["34px", {"lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "800"}], "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800"}], "headline-sm": ["18px", {"lineHeight": "24px", "fontWeight": "700"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "800"}], "headline-xl-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "750"}], "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,108,73,0.06)]"><div class="h-24 px-margin-mobile flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="NutriQuest Brand Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtv8-0uZn_4aOpj84seTweDEjjPEODrbxyD_C7ZqTwL1Pq_hjUiUCqg454_OfZK2eYP7UANCpfHlN3sJphWeuZgGR3mWgfUwxzozO6TpIY96nNvOOAei4sCHjI1Ek-GUrhiBRseHqYk7meRvzEwjhubT7Mz3AtrqKL9pyOcUUqo22tlrdmvyT0RjE2xrJZYyx-lnhHVIeXqNSegcKNSterKNE3-gvh124SeRzy9Ytd2jtxFd30si6y"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-extrabold truncate leading-tight">NutriQuest</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Learn</span></div></div><div class="flex items-center gap-space-xs shrink-0"><div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm shadow-[0_2px_0_0_#ffddb8]"><span class="text-xs leading-none">🔥</span><span class="font-extrabold">3</span></div><div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm shadow-[0_2px_0_0_#4edea3]"><span class="material-symbols-outlined text-[14px] leading-none text-primary">bolt</span><span class="font-extrabold">+420 XP</span></div><a class="relative shrink-0 block rounded-full ring-2 ring-primary/20 shadow-[0_2px_4px_rgba(0,0,0,0.08)] ml-1" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg5rAbDpK4wxKlyipurQ69zCAooLli5Lax05F0lOQFcin6o9qxFkFmBNh4tOzusShvKTjeSw2RGDGAlVLG4M36va_NiyS0OLVHM5VpAfoKOOVXfmDy_xbdgvxHKfNh2XJMnvD3UAlE_CAIqV8N4VC8C0RZv3MoaPtsFdl8XVYFjtM4KGLbYwA2XFiNQ4UCNaSQcNskq-n19nfqbbO1oRPEbhKRuHskZUlS4juyD2Ug2ppY40Ywdo19"/></a></div></div><div class="flex items-center justify-between px-space-xs"><div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px] text-secondary">military_tech</span><span class="font-bold">Lv. 4 Quest Novice</span></div><div class="flex items-center gap-2 flex-1 max-w-[130px] ml-3"><div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden p-[1px]"><div class="h-full bg-primary rounded-full w-[68%]"></div></div><span class="font-label-sm text-[10px] text-on-surface-variant font-bold">68%</span></div></div></div></header><main class="flex flex-col relative w-full pt-24 pb-28 bg-surface"><div class="flex flex-col w-full">
+<div class="px-margin-mobile flex flex-col gap-space-md pt-2">
+<!-- Top Academy Banner -->
+<div class="relative overflow-hidden rounded-lg bg-surface-container p-space-md shadow-sm">
+<div class="absolute -right-4 -bottom-6 w-28 h-28 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between gap-space-sm relative z-10">
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm w-fit shadow-[0_2px_0_0_#4edea3]">
+<span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">school</span>
+<span>Food Academy</span>
+</div>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface tracking-tight">Food Academy 📚</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[270px]">
+            Bite-sized nutrition lessons designed for real life, not medical school.
+          </p>
+</div>
+<div class="relative shrink-0 flex items-center justify-center w-14 h-14 rounded-full bg-primary text-on-primary shadow-[0_4px_0_0_#00422b]">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+<span class="absolute -top-1 -right-1 flex h-4 w-4">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-secondary-container text-[9px] font-extrabold text-on-secondary-container items-center justify-center">✨</span>
+</span>
+</div>
+</div>
+<!-- Streak & Mastery Progress -->
+<div class="mt-space-md pt-space-sm flex flex-col gap-space-xs relative z-10">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<span>14/24 Lessons Completed</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-extrabold">58% Scholar</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-highest p-[2px] shadow-inner">
+<div class="h-full bg-primary rounded-full transition-all duration-700 ease-out shadow-[inset_0_1px_0_0_rgba(255,255,255,0.4)]" style="width: 58%;"></div>
+</div>
+</div>
+</div>
+<!-- Search & Filter Controls -->
+<div class="flex flex-col gap-space-sm">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full h-12 pl-10 pr-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm shadow-[0_2px_0_0_#dee8ff] focus:outline-none focus:bg-surface-container-lowest transition-all" id="lesson-search" placeholder="Search nutrients, vitamins, foods..." type="text"/>
+</div>
+<!-- Tag Filters -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 no-scrollbar" id="filter-container">
+<button class="filter-btn active shrink-0 px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-[0_2px_0_0_#00422b] transition-transform active:scale-95" data-filter="all">
+          All (8)
+        </button>
+<button class="filter-btn shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md shadow-[0_2px_0_0_#d8e3fb] hover:bg-surface-container-high transition-transform active:scale-95" data-filter="macro">
+          Macronutrients
+        </button>
+<button class="filter-btn shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md shadow-[0_2px_0_0_#d8e3fb] hover:bg-surface-container-high transition-transform active:scale-95" data-filter="micro">
+          Micronutrients
+        </button>
+<button class="filter-btn shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md shadow-[0_2px_0_0_#d8e3fb] hover:bg-surface-container-high transition-transform active:scale-95" data-filter="habits">
+          Habits &amp; Daily
+        </button>
+</div>
+</div>
+<!-- Lesson Cards Grid -->
+<div class="flex flex-col gap-space-md" id="cards-list">
+<!-- 1. Carbohydrates -->
+<div class="lesson-card group relative bg-surface-container-lowest rounded-lg p-space-md shadow-[0_4px_0_0_#dee8ff,0_10px_20px_rgba(0,108,73,0.04)] flex flex-col gap-space-sm" data-category="macro" data-title="carbohydrates energy grains oats complex fuel">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-[24px] shadow-[0_3px_0_0_#fea619] shrink-0">
+              🌾
+            </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-extrabold uppercase">Macronutrient</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Carbohydrates</h2>
+</div>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-extrabold shadow-[0_2px_0_0_#4edea3] flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span>+20 XP</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Your body's primary fuel source. Complex vs simple carbs and sustained energy.
+        </p>
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">timer</span>
+<span>3 min read</span>
+</div>
+<button class="lesson-action-btn flex items-center gap-1 px-4 py-2 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-[0_3px_0_0_#00422b] transition-all active:translate-y-[2px] active:shadow-[0_1px_0_0_#00422b]">
+<span>Learn More</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 2. Protein -->
+<div class="lesson-card group relative bg-surface-container-lowest rounded-lg p-space-md shadow-[0_4px_0_0_#dee8ff,0_10px_20px_rgba(0,108,73,0.04)] flex flex-col gap-space-sm" data-category="macro" data-title="protein muscle tissue repair eggs beans amino fullness">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-[24px] shadow-[0_3px_0_0_#fea619] shrink-0">
+              🥚
+            </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-extrabold uppercase">Macronutrient</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Protein</h2>
+</div>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-extrabold shadow-[0_2px_0_0_#4edea3] flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span>+20 XP</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Building blocks for muscle, tissue repair, immune enzymes, and feeling full.
+        </p>
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">timer</span>
+<span>4 min read</span>
+</div>
+<button class="lesson-action-btn flex items-center gap-1 px-4 py-2 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-[0_3px_0_0_#00422b] transition-all active:translate-y-[2px] active:shadow-[0_1px_0_0_#00422b]">
+<span>Learn More</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 3. Healthy Fats -->
+<div class="lesson-card group relative bg-surface-container-lowest rounded-lg p-space-md shadow-[0_4px_0_0_#dee8ff,0_10px_20px_rgba(0,108,73,0.04)] flex flex-col gap-space-sm" data-category="macro" data-title="healthy fats avocado olive oil omega brain hormones absorption">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-[24px] shadow-[0_3px_0_0_#10b981] shrink-0">
+              🥑
+            </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-extrabold uppercase">Macronutrient</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Healthy Fats</h2>
+</div>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-extrabold shadow-[0_2px_0_0_#4edea3] flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span>+20 XP</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Brain fuel, hormone synthesis, and absorbing essential fat-soluble vitamins.
+        </p>
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">timer</span>
+<span>3 min read</span>
+</div>
+<button class="lesson-action-btn flex items-center gap-1 px-4 py-2 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-[0_3px_0_0_#00422b] transition-all active:translate-y-[2px] active:shadow-[0_1px_0_0_#00422b]">
+<span>Learn More</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 4. Vitamins -->
+<div class="lesson-card group relative bg-surface-container-lowest rounded-lg p-space-md shadow-[0_4px_0_0_#dee8ff,0_10px_20px_rgba(0,108,73,0.04)] flex flex-col gap-space-sm" data-category="micro" data-title="vitamins micronutrients citrus orange immune immunity defenses c d a b e k">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-[24px] shadow-[0_3px_0_0_#fea619] shrink-0">
+              🍊
+            </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-extrabold uppercase">Micronutrient</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Vitamins</h2>
+</div>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-extrabold shadow-[0_2px_0_0_#d0bcff] flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-tertiary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span>+25 XP</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Vital micronutrients (A, B, C, D, E, K) that power energy and immune defenses.
+        </p>
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">timer</span>
+<span>5 min read</span>
+</div>
+<button class="lesson-action-btn flex items-center gap-1 px-4 py-2 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-[0_3px_0_0_#00422b] transition-all active:translate-y-[2px] active:shadow-[0_1px_0_0_#00422b]">
+<span>Learn More</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 5. Minerals -->
+<div class="lesson-card group relative bg-surface-container-lowest rounded-lg p-space-md shadow-[0_4px_0_0_#dee8ff,0_10px_20px_rgba(0,108,73,0.04)] flex flex-col gap-space-sm" data-category="micro" data-title="minerals iron calcium magnesium potassium bones muscles firing broccoli">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-[24px] shadow-[0_3px_0_0_#10b981] shrink-0">
+              🥦
+            </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-extrabold uppercase">Micronutrient</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Minerals</h2>
+</div>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-extrabold shadow-[0_2px_0_0_#d0bcff] flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-tertiary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span>+25 XP</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Iron, Calcium, Magnesium, Potassium - keeping bones strong and muscles firing.
+        </p>
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">timer</span>
+<span>4 min read</span>
+</div>
+<button class="lesson-action-btn flex items-center gap-1 px-4 py-2 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-[0_3px_0_0_#00422b] transition-all active:translate-y-[2px] active:shadow-[0_1px_0_0_#00422b]">
+<span>Learn More</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 6. Fibre -->
+<div class="lesson-card group relative bg-surface-container-lowest rounded-lg p-space-md shadow-[0_4px_0_0_#dee8ff,0_10px_20px_rgba(0,108,73,0.04)] flex flex-col gap-space-sm" data-category="macro" data-title="fibre gut microbiome digestion sugar balance apple chia seeds fiber">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-[24px] shadow-[0_3px_0_0_#d8e3fb] shrink-0">
+              🍎
+            </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-extrabold uppercase">Gut &amp; Digestion</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Fibre</h2>
+</div>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-extrabold shadow-[0_2px_0_0_#4edea3] flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span>+20 XP</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Gut microbiome health, smooth digestion, and steady blood sugar balance.
+        </p>
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">timer</span>
+<span>3 min read</span>
+</div>
+<button class="lesson-action-btn flex items-center gap-1 px-4 py-2 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-[0_3px_0_0_#00422b] transition-all active:translate-y-[2px] active:shadow-[0_1px_0_0_#00422b]">
+<span>Learn More</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 7. Hydration -->
+<div class="lesson-card group relative bg-surface-container-lowest rounded-lg p-space-md shadow-[0_4px_0_0_#dee8ff,0_10px_20px_rgba(0,108,73,0.04)] flex flex-col gap-space-sm" data-category="habits" data-title="hydration water ripple dehydration electrolyte thirst drink fluid">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center text-[24px] shadow-[0_3px_0_0_#dee8ff] shrink-0">
+              💧
+            </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-extrabold uppercase">Daily Habit</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Hydration</h2>
+</div>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-extrabold shadow-[0_2px_0_0_#4edea3] flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span>+15 XP</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Why water is 60% of you, dehydration warning signs, and electrolyte balance.
+        </p>
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">timer</span>
+<span>2 min read</span>
+</div>
+<button class="lesson-action-btn flex items-center gap-1 px-4 py-2 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-[0_3px_0_0_#00422b] transition-all active:translate-y-[2px] active:shadow-[0_1px_0_0_#00422b]">
+<span>Learn More</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 8. Balanced Diet -->
+<div class="lesson-card group relative bg-surface-container-lowest rounded-lg p-space-md shadow-[0_4px_0_0_#dee8ff,0_10px_20px_rgba(0,108,73,0.04)] flex flex-col gap-space-sm" data-category="habits" data-title="balanced diet plate wholesome cravings junk food mindful meals 80 20 rule">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-[24px] shadow-[0_3px_0_0_#fea619] shrink-0">
+              🥗
+            </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-extrabold uppercase">Lifestyle Mastery</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Balanced Diet</h2>
+</div>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-extrabold shadow-[0_2px_0_0_#855300] flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-secondary" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span>+30 XP</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          The 80/20 rule, plate method, mindful eating, and beating junk food cravings.
+        </p>
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">timer</span>
+<span>4 min read</span>
+</div>
+<button class="lesson-action-btn flex items-center gap-1 px-4 py-2 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-[0_3px_0_0_#00422b] transition-all active:translate-y-[2px] active:shadow-[0_1px_0_0_#00422b]">
+<span>Learn More</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Mini-Quiz Callout Card -->
+<div class="relative overflow-hidden rounded-lg bg-gradient-to-br from-tertiary to-on-tertiary-container text-on-tertiary p-space-md shadow-[0_4px_0_0_#23005c,0_10px_20px_rgba(109,59,215,0.25)] flex flex-col gap-space-sm mt-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-extrabold shadow-[0_2px_0_0_#b090ff]">
+<span class="material-symbols-outlined text-[13px] text-tertiary" style="font-variation-settings: 'FILL' 1;">quiz</span>
+<span>Knowledge Check</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-extrabold shadow-[0_2px_0_0_#855300]">
+          +40 XP
+        </span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-tertiary font-extrabold">Ready for the Arena?</h3>
+<p class="font-body-sm text-body-sm text-tertiary-fixed">
+          Test what you just learned and earn +40 XP! Only 3 fast questions.
+        </p>
+</div>
+<button class="w-full h-12 mt-1 rounded-full bg-secondary-container text-on-secondary-container font-label-lg text-label-lg font-extrabold flex items-center justify-center gap-2 shadow-[0_4px_0_0_#855300] transition-all active:translate-y-[3px] active:shadow-[0_1px_0_0_#855300]" id="start-quiz-btn">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+<span>Start Quick Mini-Quiz</span>
+</button>
+</div>
+<!-- Interactive Lesson Popup Modal (Hidden by default) -->
+<div class="fixed inset-0 z-50 flex items-end justify-center bg-inverse-surface/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300" id="lesson-modal">
+<div class="w-full max-w-lg bg-surface-container-lowest rounded-t-xl p-space-lg flex flex-col gap-space-md shadow-2xl transform translate-y-full transition-transform duration-300 max-h-[751px] overflow-y-auto" id="lesson-modal-panel">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="text-3xl" id="modal-icon">🌾</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-extrabold uppercase" id="modal-tag">Macronutrient</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold" id="modal-title">Carbohydrates</h3>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high" id="close-modal-btn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="rounded-lg bg-surface-container-low p-space-sm flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold">
+<span class="material-symbols-outlined text-[20px]">lightbulb</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold" id="modal-highlight">
+            Fuel your muscles with complex grains rather than sugar spikes.
+          </p>
+</div>
+<div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant" id="modal-body-text">
+<p>Complex carbohydrates break down slowly, giving you stable focus throughout school, sports, and late study sessions.</p>
+<p class="font-bold text-on-surface mt-1">Smart food hero choices:</p>
+<ul class="list-disc list-inside space-y-1 text-on-surface-variant">
+<li>Rolled oats with cinnamon</li>
+<li>Brown rice and sweet potatoes</li>
+<li>Whole grain sourdough bread</li>
+</ul>
+</div>
+<button class="w-full h-12 rounded-full bg-primary text-on-primary font-label-lg text-label-lg font-extrabold flex items-center justify-center gap-2 shadow-[0_4px_0_0_#00422b] transition-all active:translate-y-[2px] active:shadow-[0_1px_0_0_#00422b]" id="complete-lesson-btn">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Claim Lesson XP</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initLearnScreen() {
+    const searchInput = document.getElementById('lesson-search');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.lesson-card');
+    const modal = document.getElementById('lesson-modal');
+    const modalPanel = document.getElementById('lesson-modal-panel');
+    const closeModalBtn = document.getElementById('close-modal-btn');
+    const completeLessonBtn = document.getElementById('complete-lesson-btn');
+    const actionBtns = document.querySelectorAll('.lesson-action-btn');
+    const startQuizBtn = document.getElementById('start-quiz-btn');
+
+    let currentFilter = 'all';
+
+    function filterCards() {
+      const query = (searchInput.value || '').trim().toLowerCase();
+      cards.forEach(card => {
+        const titleAndTags = (card.getAttribute('data-title') || '').toLowerCase();
+        const category = card.getAttribute('data-category') || '';
+        
+        const matchesFilter = (currentFilter === 'all' || category === currentFilter);
+        const matchesSearch = !query || titleAndTags.includes(query);
+
+        if (matchesFilter && matchesSearch) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener('input', filterCards);
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary', 'shadow-[0_2px_0_0_#00422b]');
+          b.classList.add('bg-surface-container', 'text-on-surface-variant', 'shadow-[0_2px_0_0_#d8e3fb]');
+        });
+        btn.classList.remove('bg-surface-container', 'text-on-surface-variant', 'shadow-[0_2px_0_0_#d8e3fb]');
+        btn.classList.add('bg-primary', 'text-on-primary', 'shadow-[0_2px_0_0_#00422b]');
+        
+        currentFilter = btn.getAttribute('data-filter') || 'all';
+        filterCards();
+      });
+    });
+
+    function openModal(title, icon, tag) {
+      const modalTitle = document.getElementById('modal-title');
+      const modalIcon = document.getElementById('modal-icon');
+      const modalTag = document.getElementById('modal-tag');
+      
+      if (modalTitle) modalTitle.textContent = title;
+      if (modalIcon) modalIcon.textContent = icon;
+      if (modalTag) modalTag.textContent = tag;
+
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modal.classList.add('opacity-100', 'pointer-events-auto');
+      modalPanel.classList.remove('translate-y-full');
+      modalPanel.classList.add('translate-y-0');
+    }
+
+    function closeModal() {
+      modal.classList.remove('opacity-100', 'pointer-events-auto');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      modalPanel.classList.remove('translate-y-0');
+      modalPanel.classList.add('translate-y-full');
+    }
+
+    actionBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const card = e.target.closest('.lesson-card');
+        if (!card) return;
+        const title = card.querySelector('h2')?.textContent || 'Lesson';
+        const icon = card.querySelector('.w-12')?.textContent.trim() || '🍎';
+        const tag = card.querySelector('.uppercase')?.textContent || 'Topic';
+        openModal(title, icon, tag);
+      });
+    });
+
+    if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+    if (modal) {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+    }
+
+    if (completeLessonBtn) {
+      completeLessonBtn.addEventListener('click', () => {
+        completeLessonBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check</span> Claimed +25 XP!';
+        completeLessonBtn.classList.remove('bg-primary');
+        completeLessonBtn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+        setTimeout(() => {
+          closeModal();
+          setTimeout(() => {
+            completeLessonBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span> <span>Claim Lesson XP</span>';
+            completeLessonBtn.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+            completeLessonBtn.classList.add('bg-primary');
+          }, 300);
+        }, 800);
+      });
+    }
+
+    if (startQuizBtn) {
+      startQuizBtn.addEventListener('click', () => {
+        startQuizBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">sync</span> Loading Quiz Arena...';
+        setTimeout(() => {
+          startQuizBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">verified</span> Quiz Unlocked!';
+          setTimeout(() => {
+            startQuizBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">play_circle</span> <span>Start Quick Mini-Quiz</span>';
+          }, 1500);
+        }, 700);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[50px] h-12 text-on-surface-variant transition-transform active:scale-95" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center min-w-[50px] h-12 text-on-surface-variant transition-transform active:scale-95" data-path="quests" href="#"><span class="material-symbols-outlined text-[24px]">explore</span><span class="font-label-sm text-label-sm">Quests</span></a><a class="flex flex-col items-center justify-center min-w-[50px] h-12 text-on-surface-variant transition-transform active:scale-95" data-path="games" href="#"><span class="material-symbols-outlined text-[24px]">sports_esports</span><span class="font-label-sm text-label-sm">Games</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[50px] h-12 transition-transform active:scale-95 text-primary font-bold" data-path="learn" href="#"><span class="material-symbols-outlined text-[24px]">menu_book</span><span class="font-label-sm text-label-sm">Learn</span></a><a class="flex flex-col items-center justify-center min-w-[50px] h-12 text-on-surface-variant transition-transform active:scale-95" data-path="rewards" href="#"><span class="material-symbols-outlined text-[24px]">redeem</span><span class="font-label-sm text-label-sm">Rewards</span></a><a class="flex flex-col items-center justify-center min-w-[50px] h-12 text-on-surface-variant transition-transform active:scale-95" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm">Profile</span></a></div></nav></body></html>
